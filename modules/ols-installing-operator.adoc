@@ -9,12 +9,9 @@
 
 * You are logged in to the {ocp-product-title} web console as a user with the cluster-admin role.
 
-* For any command line instructions, it assumes you have already logged into your cluster with the oc CLI.
+* You have access to the {ocp-short-name} CLI (oc).
 
 * You have successfully configured your Large Language Model (LLM) provider so that OpenShift Lightspeed can commnuicate with it.
-
-
-
 
 .Procedure
 
