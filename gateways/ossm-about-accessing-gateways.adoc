@@ -1,0 +1,17 @@
+:_content-type: ASSEMBLY
+[id="ossm-about-accessing-gateways"]
+= About accessing gateways
+include::_attributes/common-attributes.adoc[]
+:context: ossm-about-accessing-gateways
+
+toc::[] 
+
+Typically, the Istio ingress gateway controls the flow of traffic into the service mesh. You can access a gateway by using one of the following approaches:
+
+* Kubernetes load balancing 
+* {ocp-short-name} router
+* Gateway API
+
+include::modules/ossm-about-kubernetes-load-balancing.adoc[leveloffset=+1]
+include::modules/ossm-about-openshift-router.adoc[leveloffset=+1]
+include::modules/ossm-accessing-gateway-using-gateway-api.adoc[leveloffset=+1]

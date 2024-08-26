@@ -1,0 +1,14 @@
+// Module included in the following assemblies:
+// gateways/ossm-about-accessing-gateways.adoc
+
+:_mod-docs-content-type: CONCEPT
+[id="ossm-about-kubernetes-load-balancing_{context}"]
+= About Kubernetes load balancing 
+
+Using Kubernetes load balancing to handle incoming traffic directly through the inbound gateway can reduce latency associated with data encryption. By managing encryption at the inbound gateway, you avoid intermediate decryption and re-encryption steps within the mesh that can add latency. This approach allows mesh traffic to be encrypted and decrypted only once, which is generally more efficient.
+
+Directing incoming traffic through the load balancer and inbound gateway streamlines the mesh traffic, reducing the number of hops and potential delays caused by multiple encryption and decryption processes.
+
+Handling encryption and load balancing in a centralized manner through the inbound gateway simplifies mesh architecture. This centralized approach makes it easier to manage and scale the mesh while maintaining better performance.
+
+To use Kubernetes load balancing, the `spec.type` parameter for the gateway Service must be `LoadBalancer`. If you are using the Gateway API with automatic deployment, this is the default setting. If you are using Gateway Injection, you have to set the field manually.

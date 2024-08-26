@@ -1,0 +1,12 @@
+// Module included in the following assemblies:
+// gateways/ossm-about-accessing-gateways.adoc
+
+:_mod-docs-content-type: CONCEPT
+[id="ossm-about-openshift-router_{context}"]
+= About OpenShift Router
+
+The OpenShift Router provides a standard approach for managing ingress traffic, but introduces an additional hop between the inbound traffic and the mesh applications. Typically, you route the traffic by decrypting it at the router and then re-encrypting it at the service mesh ingress gateway, which introduces latency.
+
+If you are already using the OpenShift router across your installation you might want to keep using it, even with the cost of increased latency. Similarly, if you manage encryption certificates using OpenShift Router outside Istio, you should continue to use OpenShift Router.
+
+To use OpenShift Router, the `spec.type` parameter for the gateway Service must be `ClusterIP`. If you are using the Gateway API with automatic deployment, you must use the `networking.istio.io/service-type` annotation on the Kubernetes Gateway resource to set the `spec.type` parameter. If you are using the Gateway API with automatic deployment, this is the default setting. If you are using Gateway Injection, you have to set the field manually.
