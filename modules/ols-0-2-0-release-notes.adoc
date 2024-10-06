@@ -1,0 +1,21 @@
+// Module included in the following assemblies:
+// release_notes/ols-release-notes.adoc
+
+:_mod-docs-content-type: REFERENCE
+[id="ols-0-2-0-release-notes_{context}"]
+= {ols-long} version 0.2.0
+
+{ols-offical} 0.2.0 is now available on {ocp-product-title} 4.15 or later.
+
+[id="ols-0-2-2-enhancements_{context}"]
+== Enhancements
+
+The following enhancements have been made with {ols-offical} 0.2.0:
+
+* This release introduces the {ols-offical} Operator as a technology preview release. Previously, the {ols-short} Operator was a developer preview release. 
+
+* Beginning in this release, the {ols-offical} Operator can be installed on an {ocp-product-title} disconnected cluster.
+
+* With this release, {rhelai} can be configured as the Large Language Model (LLM) provider.
+
+* This releases adds the ability to attach a YAML file to a question you submit to the {ols-long} Service. Attaching a YAML file to a question can provide additional context, enabling {ols-short} to provide a more refined answer. You can attach a YAML file from *Networking* in the {ocp-product-title} web console.
