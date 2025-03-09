@@ -14,7 +14,7 @@ The `bookinfo` application is used as an example for the `Istio` resource. For m
 
 [NOTE]
 ====
-Using the simple migration method to migrate from  {SMProduct} 2 to  {SMProduct} 3 will result in traffic disruption to the services running on a mesh. 
+Using the simple migration method to migrate from  {SMProduct} 2 to {SMProduct} 3 results in traffic disruption to the services running on a mesh. There are two methods to perform the cluster-wide migration without disrupting traffic. See "Migrating a cluster-wide deployment by using the istio injection label" or "Migrating a cluster-wide deployment by using the Istio revision label" for more information.
 ====
 
 .Prerequisites
