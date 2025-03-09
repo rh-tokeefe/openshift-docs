@@ -4,7 +4,7 @@
 
 :_mod-docs-content-type: PROCEDURE
 [id="ossm-migrating-workloads-using-the-istio-revision-label-with-cert-manager_{context}"]
-= Migrating workloads using the Istio revision label with cert-manager
+= Migrating workloads by using the Istio revision label with cert-manager
 
 Now you can migrate your workloads workloads from the {SMProduct} 2.6 control plane to the {SMproduct} 3.0 control plane.
 
