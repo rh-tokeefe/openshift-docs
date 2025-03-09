@@ -6,6 +6,17 @@
 [id="ossm-migrating-a-cluster-wide-deployment-using-the-simple-migration-method_{context}"]
 = Migrating a cluster-wide deployment using the simple migration method 
 
+You can perform a canary upgrade with the gradual migration of data plane namespaces for a cluster-wide deployment by using the `istio-injection=enabled` label and the `default` revision tag. 
+
+You must re-label all of the data plane namespaces. However, it is safe to restart any of the workloads at any point during the migration process. 
+
+The `bookinfo` application is used as an example for the `Istio` resource. For more information about configuration differences between the {SMProduct} 2 `ServiceMeshControlPlane` resource and the {SMProduct} 3 `Istio` resource, see "ServiceMeshControlPlane resource to Istio resource fields mapping".
+
+[NOTE]
+====
+Using the simple migration method to migrate from  {SMProduct} 2 to  {SMProduct} 3 will result in traffic disruption to the services running on a mesh. 
+====
+
 .Prerequisites
 
 * You have deployed {ocp-product-title} 4.14 or later.
