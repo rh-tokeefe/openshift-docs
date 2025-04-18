@@ -1,0 +1,16 @@
+// Module included in the following assemblies:
+// * lightspeed-docs-main/configure/ols-configuring-openshift-lightspeed.adoc
+
+:_mod-docs-content-type: CONCEPT
+[id="byo-knowledge-overview_{context}"]
+= BYO Knowledge overview
+
+The {ols-long} service uses a large language model (LLM) to generate responses to questions. The BYO Knowledge tool can be used to create a retrieval-augmented generation (RAG) database to enhance the knowledge that is available to the LLM. When you create a RAG database you customize the {ols-long} service for your environment. For example, a network administrator can develop a standard operating procedure (SOP) that is used to provision an {ocp-product-title} cluster. Then, the network administrator can use the BYO Knowledge tool to enhance the knowledge available to the LLM by including information from the SOP.
+
+To bring your own knowledge to an LLM:
+
+* Create the custom content in Markdown format
+* Using the BYO Knowledge tool, package the content as a container image
+* Push the newly created container image to an image registry, such as `quay.io`
+* Update the `OLSConfig` custom resource file to list the image that was pushed to the image registry
+* Access the {ols-long} virtual assistant and submit a question associated with the custom knowledge that was added to the LLM.
