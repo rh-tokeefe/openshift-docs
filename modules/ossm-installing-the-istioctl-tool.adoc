@@ -43,7 +43,7 @@ If there are multiple `Istio` resources with different versions, choose the late
 
 . Extract the `istioctl` binary file.
 
-.. For the Linux operating system, wun the following command:
+.. For the Linux operating system, run the following command:
 +
 [source,terminal]
 ----
