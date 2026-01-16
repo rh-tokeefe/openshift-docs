@@ -14,6 +14,7 @@ The release notes highlight what is new and what has changed with each {ols-offi
 ====
 
 include::modules/ols-1-0-9-release-notes.adoc[leveloffset=+1]
+include::modules/ols-1-0-9-fixed-issues.adoc[leveloffset=+2]
 include::modules/ols-1-0-8-release-notes.adoc[leveloffset=+1]
 include::modules/ols-1-0-8-fixed-issues.adoc[leveloffset=+2]
 include::modules/ols-1-0-7-release-notes.adoc[leveloffset=+1]
